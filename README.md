@@ -1,49 +1,43 @@
-Observações Gerais
+# Classificação de Investimentos com Árvore de Decisão
 
-Objetivo do Código:
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white) ![Topic](https://img.shields.io/badge/Topic-machine-learning-green) ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-O código gera um conjunto de dados sintético e utiliza uma árvore de decisão para prever o sucesso de investimentos, baseando-se em três características: Investimento, Risco e Retorno Esperado.
+## Descrição
 
-Importações:
+Modelo de Árvore de Decisão para classificação de sucesso de investimentos com dataset simulado e visualizações explicativas da árvore treinada.
 
-utilizando bibliotecas populares e necessárias:
+## Funcionalidades
 
-numpy para manipulação numérica.
+- Classificação de investimentos com Decision Tree
+- Dataset simulado com variáveis financeiras
+- Visualização da árvore de decisão
+- Métricas: acurácia, precisão, recall
+- Feature importance para interpretabilidade
 
-pandas para gerenciamento de dados em forma de DataFrame.
+## Stack Tecnológico
 
-matplotlib e seaborn para visualizações gráficas.
+| Tecnologia | Descrição |
+|---|---|
+| Python | Linguagem principal |
+| Scikit-learn | Decision Tree Classifier |
+| Matplotlib | Visualização da árvore |
+| Pandas | Manipulação de dados |
 
-sklearn para modelagem e métricas de avaliação.
+## Como Usar
 
-Geração de Dados:
+1. Instale as dependências: `pip install scikit-learn pandas matplotlib`
+2. Execute: `python classificacao_investimentos.py`
+3. A árvore de decisão será treinada e visualizada
 
-Os dados são gerados de forma aleatória, o que é útil para testar o modelo.
-A relação entre as variáveis independentes e a variável dependente é estabelecida por uma combinação linear, e a adição de ruído (com np.random.randn) cria uma situação mais realista.
-Estrutura do DataFrame:
+## Estrutura de Pastas
 
-A criação do DataFrame é clara e organizada, facilitando a interpretação das colunas.
-Considere adicionar comentários que expliquem o significado de cada coluna.
-Divisão dos Dados:
+```
+├── classificacao_investimentos.py
+├── data/
+├── outputs/
+└── requirements.txt
+```
 
-A divisão entre conjuntos de treinamento e teste é adequada, utilizando 80% para treinamento e 20% para teste.
-Usar random_state garante a reprodutibilidade, o que é uma boa prática.
-Treinamento do Modelo:
+---
 
-O uso de DecisionTreeClassifier é apropriado para este tipo de problema de classificação.
-
-Avaliação do Modelo:
-
-O relatório de classificação fornece uma visão geral do desempenho do modelo, incluindo precisão, recall e F1-score, que são métricas relevantes.
-A matriz de confusão é uma excelente ferramenta para visualizar o desempenho do modelo em cada classe.
-Visualização da Árvore de Decisão:
-
-A visualização da árvore de decisão é útil para entender como o modelo faz previsões. 
-
-![image](https://github.com/user-attachments/assets/d6062221-bfd9-4985-9027-513ccdebd81b)
-
-![image](https://github.com/user-attachments/assets/ee4690c8-eecf-4bb8-a54c-ffca74a7e295)
-
-![image](https://github.com/user-attachments/assets/978f3290-8fd8-4873-84c8-26aacc4cf3c3)
-
-
+> Feito com ❤️ por Rone Bragaglia · ML Engineer & Fundador CobrançaAuto
